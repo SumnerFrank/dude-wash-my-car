@@ -9,7 +9,7 @@ I WANT to see the weather, SO THAT I can avoid a poorly timed car wash
 
 ## ACCEPTANCE CRITERIA 
 GIVEN I am searching for a car wash
-WHEN
+WHEN 
 THEN
 WHEN
 THEN
