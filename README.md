@@ -10,11 +10,11 @@ I WANT to see the weather, SO THAT I can avoid a poorly timed car wash
 ## ACCEPTANCE CRITERIA 
 GIVEN I am searching for a car wash
 WHEN I need my car washed,
-THEN I want to locate the closest car wash to the zip code I enter
+THEN I want to locate the closest car wash to the zip code I enter.
 WHEN I want to save money,
-THEN I want to find the costs of car washes in my search
+THEN I want to find the costs of car washes in my search.
 WHEN I want to make sure my wash won't be a waste, 
-THEN I want to find out the weather 
+THEN I want to find out the weather. 
 
 
 ### Product Description
