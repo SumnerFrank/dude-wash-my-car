@@ -1,0 +1,60 @@
+/* CSS variables were created at the root of the document to be used throughout the style sheet */
+:root {
+    --dark: rgba(13, 15, 2, 0.733);
+    --lightgray: lightgray;
+    --reggray:rgba(128, 128, 128, 0.507);
+    --white: rgb(255, 255, 255);
+    --red: rgba(90, 13, 13, 0.774);
+}    
+
+/* UNIVERSAL STYLE ADDED */
+* {
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+/* GENERAL STYLE ADDED*/
+body,html {
+    padding:0;
+    margin:0;
+    height: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: -webkit-linear-gradient(to right, var(--reggray), var(--dark));
+    background: linear-gradient(to left,var(--dark), var(--lightgray)); 
+}
+/* HEADER-HERO STYLES ADDED*/
+#heroBlock {
+    background: url("../images/Corvette-cleaning\ hero.gif") no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+    color: var(--dark);
+    padding: 50px;
+    height: 50%;
+}
+
+.sideBar {
+   background-color: var(--dark); 
+   float: left;
+   margin-right: 3rem; 
+   height: 100%;
+   position: fixed;
+} 
+
+ .navLinks {
+    list-style: none;
+ }
+
+ a {   
+   color: var(--red);
+   text-decoration: none;
+   font-size: large;
+   line-height: 5rem;
+   text-align: center;
+}
+/* MAIN SECTION STYLES ADDED */
+h2, .contactInput, #washMap {
+    margin-left: 50%;
+}
+
+h2 {
+    font-size: xx-large;
+}
