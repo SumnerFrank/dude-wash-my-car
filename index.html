@@ -1,49 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dude Wash My Car</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArQBDsOARK_GeyEeCaALzi3lV5Tci96X4&callback=initMap"></script>
-    <link rel="icon" type="image/jpg" href="./assets/images/car-wash-icon-png-0.jpg">
 </head>
-<!-- HEADER -->
+
+<header>
+    
+</header>
+
 <body>
-    <header id="heroBlock">
-    </header>
-<aside class="sideBar">
-    <nav>
-        <ul class="navLinks">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Forecast</a></li>
-            <li><a href="#">Reviews</a></li>
-            <li><a href="#">Contact Us!</a></li>
-        </ul>
-    <nav>
-</aside>
-<!-- MAIN SECTION TO DISPLAY PAGE CONTENT --> 
-<main>
-<h2 id="titleBlock">
-        Search Your Nearest Location
-    </h2>
-    <div id="washMap">
-        Map Will Go Here
-    </div>
-</main>     
-<!--CONTACT US FORM-->   
-<section>
-    <h2>Contact Us</h2>
-    <form class="contactInput">
-        Name<input type="text"><br>
-        Email<input type="text"><br>
-        Zip Code<input type="text"><br>
-        <button>submit</button>
-    </form>
-</section>
-<br>
-    <script src="assets/js/script.js"></script>
+
+    <input id="pac-input" class="controls" type="text" placeholder="Search Box"/>
+    <div id="map"></div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArQBDsOARK_GeyEeCaALzi3lV5Tci96X4&libraries=places"></script>
+    <script src="./assets/js/script.js"></script>
+    
 </body>
 </html>
