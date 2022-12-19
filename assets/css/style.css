@@ -10,13 +10,13 @@
 /* UNIVERSAL STYLE ADDED */
 * {
     box-sizing: border-box;
-    overflow: hidden;
   }
 /* GENERAL STYLE ADDED*/
 body,html {
+    overflow: auto;
     padding:0;
     margin:0;
-    height: 100%;
+    height: 100vh;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background: -webkit-linear-gradient(to right, var(--reggray), var(--dark));
     background: linear-gradient(to left,var(--dark), var(--lightgray)); 
@@ -25,10 +25,10 @@ body,html {
 #heroBlock {
     background: url("../images/Corvette-cleaning\ hero.gif") no-repeat center;
     background-size: cover;
-    overflow: hidden;
+    background-position: center right;
     color: var(--dark);
     padding: 50px;
-    height: 50%;
+    height: 30%;
 }
 
 .sideBar {
@@ -36,7 +36,8 @@ body,html {
    float: left;
    margin-right: 3rem; 
    height: 100%;
-   position: fixed;
+   position: sticky;
+   text-align: center;
 } 
 
  .navLinks {
@@ -47,8 +48,9 @@ body,html {
    color: var(--red);
    text-decoration: none;
    font-size: large;
-   line-height: 5rem;
-   text-align: center;
+   line-height: 6rem;
+   padding: 20px 40px;
+   border: 2px solid ;
 }
 /* MAIN SECTION STYLES ADDED */
 h2, .contactInput, #washMap {
