@@ -10,6 +10,10 @@
     <link rel="icon" type="image/jpg" href="./assets/images/RED ICON.png">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <script src="https://kit.fontawesome.com/e7fb9e5f61.js" crossorigin="anonymous"></script>
+<!--ADDED PURE CSS FRAMEWORK-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css">
+    
 </head>
 <!-- HEADER -->
 <body>
@@ -30,13 +34,11 @@
             <li><a href="#">
                 <i class="fa-solid fa-comments"></i>
                 <span class="nav-item">Reviews</span></a></li>
-            <li><a href="#">
+            <li><a href="./contact us.html">
                 <i class="fa-solid fa-envelope-open-text"></i>
                 <span class="nav-item">Contact Us</span></a></li>
-            <li><a href="#"><img src="./assets/images/RED ICON.png" alt="red car wash logo"> 
-                <span class="nav-item"> Dude Wash My Car</span></a></li>
         </ul>
-        <nav>
+    </nav>
 </aside>
 <!-- MAIN SECTION TO DISPLAY PAGE CONTENT --> 
 <h2 id="titleBlock">
@@ -44,17 +46,12 @@
     </h2>
 <!-- MAP -->
     <input id="pac-input" class="controls" type="text" placeholder="Search Box"/>
-    <div id="map"></div>    
-<!--CONTACT US FORM-->   
-<section>
-    <h2>Contact Us</h2>
-    <form class="contactInput">
-        Name<input type="text"><br>
-        Email<input type="text"><br>
-        Zip Code<input type="text"><br>
-        <button>submit</button>
-    </form>
-</section>
+    <div id="map"></div>   
+<!--OUR WEB LOGO-->
+    <div id="redIcon">
+        <img src="./assets/images/RED ICON.png" alt="red car wash logo"> 
+        <span class="nav-logo"></span></a></div>    
+
 <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArQBDsOARK_GeyEeCaALzi3lV5Tci96X4&callback=initMap"></script> -->
 <script src="assets/js/script.js"></script>
 </body>

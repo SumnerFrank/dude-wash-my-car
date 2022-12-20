@@ -5,15 +5,14 @@
   --reggray:rgba(128, 128, 128, 0.507);
   --white: rgb(255, 255, 255);
   --red: rgba(90, 13, 13, 0.774);
-}    
-
-/* UNIVERSAL STYLE ADDED */
+}  
 * {
   box-sizing: border-box;
-}
+}  
 /* GENERAL STYLE ADDED*/
-body,html {
-  overflow: auto;
+body {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
   padding:0;
   margin:0;
   height: 100vh;
@@ -27,64 +26,112 @@ body,html {
   background-size: cover;
   background-position: center right;
   color: var(--dark);
-  padding: 50px;
-  height: 45%;
+  padding: 0;
+  height: 50%;
+  box-shadow: 0 20px 35px;
 }
 
-.sideBar {
+.sideBar, #redIcon img {
  background-color: var(--dark); 
  float: left;
- height: 100%;
- position: sticky;
  text-align: center;
+ position: sticky;
+ left: 0;
+ height: 80vh;
+ outline: none;
+ width: 10rem;
+ overflow-x: hidden;
+ box-shadow: 0 20px 35px;
 } 
 
-ul.navLinks{
-  width: 100%;
+#redIcon img, #redIcon {
+width: 10rem;
+height: 10rem;
+}
+
+li, ul {
+  padding: 0;
 }
 
 .navLinks {
   list-style: none;
+  margin:0;
 }
 
 a {   
  color: var(--red);
  text-decoration: none;
  font-size: 20px;
- line-height: 5px;
- padding: 20px;
- border: 2px solid ;
+ line-height: 5rem;
+ padding: 5px;
  display: block;
+ text-align: left;
+}
 
+.sideBar ul li a:hover, li:focus-visible {
+  background:var(--reggray);
+  transition: 0.8s;
 }
 /* MAIN SECTION STYLES ADDED */
 h2 {
-  margin-left: 50%;
-}
-
-.contactInput {
-  margin-left: 50%;
-}
-
-h2 {
   font-size: xx-large;
+  text-align: center;
 }
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.otherbutton {
+  display: inline-block;
+    margin: 5px;
+    padding: 15px 20px;
+    font-size: 100%;
+    cursor: pointer;
+    background-color:var(--purple);
+    border-radius: 10px;
+    border: 5px;
+    border-style: solid;
+    border-color:var(--seagreen);
+}
+
+.formContainer {
+  background-color:var(--dark);
+  width: 50%;
+  overflow: hidden;
+  margin:auto;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 20px 35px;
+  margin-left: auto;
+}
+
+#contactInput {
+  margin:0 30% 0 30%;
+}
+
+#contactFormTitle {
+  /* margin-top: 10rem; */
+}
+
 #map {
-  height: 30%;
+  height: 60%;
   width: 60%;
-  float:right;
-  margin-right: 50px;
+  margin:auto;
+  box-shadow: 0 20px 35px ;
 }
 
 /* 
  * Optional: Makes the sample page fill the window. 
  */
-html,
+/* html,
 body {
   height: 100%;
   margin: 0;
   padding: 0;
-}
+} */
 
 #description {
   font-family: Roboto;
