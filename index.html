@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dude Wash My Car</title>
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArQBDsOARK_GeyEeCaALzi3lV5Tci96X4&callback=initMap"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <link rel="icon" type="image/jpg" href="./assets/images/car-wash-icon-png-0.jpg">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+
 </head>
 <!-- HEADER -->
 <body>
@@ -30,8 +34,13 @@
         Search Your Nearest Location
     </h2>
     <div id="washMap">
-        Map Will Go Here
-    </div>
+        Map Will Go Here<br>
+        <input id="pac-input" class="controls" type="text" placeholder="Search Box"/>
+        </div>
+    <div id="map">
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArQBDsOARK_GeyEeCaALzi3lV5Tci96X4&libraries=places"></script>
+    </div> 
+
 </main>     
 <!--CONTACT US FORM-->   
 <section>
@@ -44,11 +53,7 @@
     </form>
 </section>
 <br>
-        
-    <input id="pac-input" class="controls" type="text" placeholder="Search Box"/>
-    <div id="map"></div>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArQBDsOARK_GeyEeCaALzi3lV5Tci96X4&libraries=places"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
