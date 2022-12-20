@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dude Wash My Car</title>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script src="https://kit.fontawesome.com/e7fb9e5f61.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArQBDsOARK_GeyEeCaALzi3lV5Tci96X4&callback=initMap"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <link rel="icon" type="image/jpg" href="./assets/images/car-wash-icon-png-0.jpg">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+
 </head>
 <!-- HEADER -->
 <body>
@@ -19,28 +19,11 @@
 <aside class="sideBar">
     <nav>
         <ul class="navLinks">
-            <li><a href="#">
-                <i class="fa-solid fa-house"></i>
-                <span class="nav-item">Home</span>
-            </a></li>
-            <li><a href="#">
-                <i class="fa-solid fa-users"></i>
-                <span class="nav-icon">About Us</span>
-            </a></li>
-            <li><a href="#">
-                <i class="fa-solid fa-sun-cloud"></i>
-                <span class="nav-icon">Forecast</span>
-            </a></li>
-            <li><a href="#">
-                <i class="fa-duotone fa-star-sharp-half"></i>
-                <span class="nav-icon">Reviews</span>
-            </a></li>
-            <li><a href="#">
-                <i class="fa-thin fa-house"></i>
-                <span class="nav-icon">Contact Us!</span>
-            </a></li>
-            <li><a href="#"><img src="./assets/images/car-wash-icon-png-0.jpg" alt="icon of car wash">
-            <span class="nav-icon">Dude Wash My Car</span></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Forecast</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Contact Us!</a></li>
         </ul>
     <nav>
 </aside>
@@ -50,8 +33,13 @@
         Search Your Nearest Location
     </h2>
     <div id="washMap">
-        Map Will Go Here
-    </div>
+        Map Will Go Here<br>
+        <input id="pac-input" class="controls" type="text" placeholder="Search Box"/>
+        </div>
+    <div id="map">
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArQBDsOARK_GeyEeCaALzi3lV5Tci96X4&libraries=places"></script>
+    </div> 
+
 </main>     
 <!--CONTACT US FORM-->   
 <section>
@@ -64,11 +52,7 @@
     </form>
 </section>
 <br>
-    <input id="pac-input" class="controls" type="text" placeholder="Search Box"/>
-    <div id="map"></div>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArQBDsOARK_GeyEeCaALzi3lV5Tci96X4&libraries=places"></script>
-    <script src="./assets/js/script.js"></script>
-    
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
