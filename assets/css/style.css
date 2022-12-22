@@ -17,11 +17,6 @@ body {
         background: linear-gradient(to left,var(--dark), var(--lightgray)); 
   }
 
-  /* .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: auto;
-    background-color: var(--reggray);
-  } */
 
   h1 {
     font-size: xx-large;
@@ -30,9 +25,21 @@ body {
   }
 
   p {
+    text-align: center;
     font-size: larger;
-    color:black
+    color:black;
     
+  }
+
+  ul{
+    text-align:justify
+    
+  }
+  
+  /* Used web.dev for reference */
+  li {
+    padding-inline-start: 1ch;
+    list-style-type:circle;
   }
 
 .about-section {
@@ -42,30 +49,22 @@ body {
     color: var(--red);
   }
 
-  .column {
-    /* float: left; */
-    width: 33.3%;
-    margin-bottom: 16px;
-    padding: 0 8px;
-  }
-
-  .column2 {
-    /* float: right; */
-    width: 33.3%;
-    margin-bottom: 16px;
-    padding: 0 8px;
-  }
-
-  .custom{
-    margin-left: -50%;
+  .custom {
     display: flex;
-    flex-direction: row-reverse;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+
   }
+
+  .column {
+    flex: 33.33%;
+    width: 100%;
+    border: solid;
+    border-color: var(--red);
+}
 
   img{
-    width: 500px;
+    width: 100%;
 }
 
-.one{
-    text-align: c;
-}
