@@ -5,48 +5,48 @@
   --reggray:rgba(128, 128, 128, 0.507);
   --white: rgb(255, 255, 255);
   --red: rgba(90, 13, 13, 0.774);
+  --transgray: rgba(13, 15, 2, 0.589);
+  --darkgray2: rgb(70, 69, 66);
 }  
 * {
   box-sizing: border-box;
 }  
 /* GENERAL STYLE ADDED*/
 body {
-  overflow-y: scroll;
-  scroll-behavior: smooth;
+  overflow: auto;
   padding:0;
   margin:0;
-  height: 100vh;
+  height: 200vh;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background: -webkit-linear-gradient(to right, var(--reggray), var(--dark));
   background: linear-gradient(to left,var(--dark), var(--lightgray)); 
 }
 /* HEADER-HERO STYLES ADDED*/
 #heroBlock {
-  background: url("../images/Corvette-cleaning\ hero.gif") no-repeat center;
-  background-size: cover;
-  background-position: center right;
+  background-image: url("../images/Corvette-cleaning\ hero.gif");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   color: var(--dark);
-  padding: 0;
-  height: 50%;
-  box-shadow: 0 20px 35px;
+  height: 100vh;
+  border-bottom: var(--red) solid 2px;
+  box-shadow: 0px 20px 80px;
 }
 
-.sideBar, #redIcon img {
- background-color: var(--dark); 
- float: left;
- text-align: center;
- position: sticky;
- left: 0;
- height: 80vh;
- outline: none;
- width: 10rem;
+.topNavBar {
+ width: 100%;
+ background-color:var(--darkgray2); 
  overflow-x: hidden;
  box-shadow: 0 20px 35px;
-} 
+ border-bottom: var(--red) solid 2px;
+ position: sticky;
+ top: 0px;
+ z-index: 1;
+}
 
-#redIcon img, #redIcon {
-width: 10rem;
-height: 10rem;
+.topNavBar ul li a {
+  float: left;
+  display: block;
 }
 
 li, ul {
@@ -56,6 +56,11 @@ li, ul {
 .navLinks {
   list-style: none;
   margin:0;
+}
+
+/* Right-aligned link Styled */
+.topNavBar a.rightside {
+  float: right;
 }
 
 a {   
@@ -68,11 +73,16 @@ a {
  text-align: left;
 }
 
-.sideBar ul li a:hover, li:focus-visible {
+ ul li .topNavBar, a:hover, li:focus-visible {
   background:var(--reggray);
   transition: 0.8s;
 }
 /* MAIN SECTION STYLES ADDED */
+
+#titleBlock {
+  margin-top: 5rem;
+}
+
 h2 {
   font-size: xx-large;
   text-align: center;
@@ -80,26 +90,12 @@ h2 {
 
 p{
   text-align: center;
-
 }
 
 h1 {
   text-align: center;
   margin-bottom: 10px;
   padding: 10px;
-}
-
-.otherbutton {
-  display: inline-block;
-    margin: 5px;
-    padding: 15px 20px;
-    font-size: 100%;
-    cursor: pointer;
-    background-color:var(--purple);
-    border-radius: 10px;
-    border: 5px;
-    border-style: solid;
-    border-color:var(--seagreen);
 }
 
 .formContainer {
@@ -113,19 +109,20 @@ h1 {
   margin-left: auto;
 }
 
+.containerContact{
+  overflow: hidden;
+}
+
 #contactInput {
   margin:0 30% 0 30%;
 }
 
-#contactFormTitle {
-  /* margin-top: 10rem; */
-}
-
 #map {
-  height: 60%;
+  height: 60vh;
   width: 60%;
   margin:auto;
   box-shadow: 0 20px 35px ;
+  overflow: hidden;
 }
 
 /* 
@@ -211,5 +208,46 @@ body {
 #target {
   width: 345px;
 }
+/* FOOTER */
+#footercontact {
+padding: 0;
+text-align: center;
+background:var(--transgray);
+border-top: 2px solid var(--red);
+margin-top: 20rem;
+box-shadow: 0 20px 35px;
+bottom: 0;
+width: 100%;
+overflow: hidden;
+}
 
+footer {
+  padding: 0;
+  text-align: center;
+  background:var(--transgray);
+  border-top: 2px solid var(--red);
+  margin-top: 20rem;
+  box-shadow: 0 20px 35px;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+}
+/* RESPONSIVE LAYOUT FOR WHEN THE SCREEN IS LESS THAN 490PX WIDE, MAKE THE NAVIGATION LINKS STACK ON TOP OF EACH OTHER */
+@media screen and (max-width: 490px) {
+  .topNavBar a {
+    float: none;
+    width: 100%;
+    text-align: center;
+    line-height: 1rem;
+    padding: 2px;
+    font-size: 15px;
+  }
+}
 
+/* MAKES USER SCROLL SMOOTHLY */
+@media
+(prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}

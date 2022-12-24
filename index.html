@@ -19,8 +19,8 @@
 <body>
     <header id="heroBlock">
     </header>
-<aside class="sideBar">
-    <nav>
+<!--TOP NAVBar"-->     
+    <nav class ="topNavBar">
         <ul class="navLinks">
             <li><a href="#">
                 <i class="fa-solid fa-house"></i>
@@ -28,12 +28,15 @@
             <li><a href="aboutus.html">
                 <i class="fa-solid fa-users"></i>
                 <span class="nav-item">About Us</span></a></li>
-            <li><a href="./contact us.html">
+                <li><a href="#forecast">
+                    <i class="fa-solid fa-cloud-sun"></i>
+                    <span class="nav-item">Forecast</span></a></li>
+            <li><a href="./contact us.html"  class="rightside">
                 <i class="fa-solid fa-envelope-open-text"></i>
-                <span class="nav-item">Contact Us</span></a></li>
+                <span>Contact Us</span></a></li>
         </ul>
     </nav>
-</aside>
+
 <!-- MAIN SECTION TO DISPLAY PAGE CONTENT --> 
 <h2 id="titleBlock">
         Search Your Nearest Location
@@ -44,12 +47,22 @@
 <!-- MAP -->
     <input id="pac-input" class="controls" type="text" placeholder="Search Box"/>
     <div id="map"></div>   
-<!--OUR WEB LOGO-->
-    <div id="redIcon">
-        <img src="./assets/images/RED ICON.png" alt="red car wash logo"> 
-        <span class="nav-logo"></span></a></div>    
+    <br>
+    <br>
+
+<!--FORECAST-->
+    <div>
+        <h1 id="forecast">WEATHER FORECAST</h1>
+<!-- TEXT FILLER FOR FORECAST SECTION -->
+      </div>
+      
 
 <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArQBDsOARK_GeyEeCaALzi3lV5Tci96X4&callback=initMap"></script> -->
 <script src="assets/js/script.js"></script>
+<!-- FOOTER -->
+<footer>
+    <h3>We Love Coding!</h3>
+    <h4>Copyright &copy; 2022 Dude Wash My Car Creative Services, Inc.</h4>
+</footer>
 </body>
 </html>
