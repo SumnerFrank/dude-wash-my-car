@@ -33,6 +33,30 @@ body {
   box-shadow: 0px 20px 80px;
 }
 
+.card-style {
+  width: 200px;
+  height: 250px;
+  border: 3px solid black;
+  margin: 10px;
+  background-color: rgba(90, 13, 13, 0.774);
+}
+
+#forecast img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#forecast {
+  margin-left: 350px;
+  display: flex;
+  flex-direction: row;
+}
+
+.search-style {
+  margin-left: 350px;
+  margin-top: 50px;
+}
+
 .topNavBar {
  width: 100%;
  background-color:var(--darkgray2); 
