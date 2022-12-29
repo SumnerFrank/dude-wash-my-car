@@ -122,6 +122,33 @@ function initAutocomplete() {
   //window.initAutocomplete = initAutocomplete;
   initAutocomplete();
 
+   //Search button for three day weather forecast
+    $("#search-button").on("click",function(){
+      let searchValue = $("#search-input").val()
+      console.log(searchValue)
+      getThreeDayForecast(searchValue)
+    })
 
+    //function to call weatherAPI
+     function getThreeDayForecast(searchValue) {
+       fetch(`http://api.weatherapi.com/v1/forecast.json?key=49b73569e66f42dc9f950608222312&q=${searchValue}&days=3`)
+      .then(Response => Response.json())
+      .then(data => {
+        console.log(data)
+      //for loop to gather weather crteria and append each weather category
+      $("#forecast").empty()
+      for (var i = 0; i < data.forecast.forecastday.length; i ++) {
+        console.log(data.forecast.forecastday[i])
+        let weatherCard = $("<div>").addClass("card-style")
+        let icon = $("<img>").attr("src", "http://cdn.weatherapi.com/weather/64x64/day/176.png")    
+        let temp = $("<p>").text("Temperature: " + data.forecast.forecastday[i].day.maxtemp_f + " \u00B0F")
+        let rain = $("<p>").text("Chance of Rain: " + data.forecast.forecastday[i].day.daily_will_it_rain + "%")  
+        let snow = $("<p>").text("Chance of Snow: " + data.forecast.forecastday[i].day.daily_will_it_snow + "%")
+        let condition = $("<p>").text("Condition: " + data.forecast.forecastday[i].day.condition.text)        
+        weatherCard.append(icon, temp, rain, snow, condition)
+        $("#forecast").append(weatherCard)
+        }
+      })
+     }
 
 
