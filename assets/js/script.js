@@ -1,4 +1,5 @@
 let googleMapsAPIKey = "AIzaSyArQBDsOARK_GeyEeCaALzi3lV5Tci96X4"
+let weatherAPIKey = "49b73569e66f42dc9f950608222312"
 
   //google map for places
   let map;
