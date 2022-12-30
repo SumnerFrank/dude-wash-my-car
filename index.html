@@ -38,7 +38,7 @@
     </nav>
 
 <!-- MAIN SECTION TO DISPLAY PAGE CONTENT --> 
-<h2 id="titleBlock">
+<h2 class="titleBlock">
         Search Your Nearest Location
     </h2>
     <p>
@@ -51,11 +51,31 @@
     <br>
 
 <!--Weather search-->
-<div class="search-style">
-        <h3>Want to know the weather before your car wash? </h3>
+<div  class="search-style">
+        <h2 class="titleBlock">Want to know the weather before your car wash? </h2>
         <h3>Get a three-day weather forecast below..</h3>
-    <input type="" id="search-input" placeholder="Please select a city">
-    <button id="search-button">Check weather</button>
+    <input type="" id="search-input" class="pure-u-1-8 pure-button" placeholder="Please select a city">
+    <button type="" id="search-button" class="button-error pure-button">Check weather</button> 
+    <style>  
+        .button-error {
+            background: rgb(90, 13, 13, 0.774);
+            margin: 1rem 0rem 1rem 1rem;
+        }
+      
+        .button-small {
+            font-size: 85%;
+        }
+
+        /* #search-input {
+            padding: 0.5em 1em;
+            margin-right: 1rem;
+            margin-left: 1rem;
+        } */
+
+        .search-style {
+        text-align: center;
+        }
+        </style>
 </div>
     <div id="forecast" class="forecast"></div>
       

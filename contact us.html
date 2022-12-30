@@ -38,11 +38,12 @@
             </div>
             <div class="pure-u-1 pure-u-md-1-3">
                 <label for="Zipcode">Zipcode</label>
-                <input type="text" id="Zipcode" class="pure-u-1-2"/>
+                <input type="text" id="number" id="Zipcode" class="pure-u-1-2"/>
+                <span id="error"></span>
                 <br>
             </div>
         </div>    
-        <button type="submit" class="button-error pure-button">Submit</button> 
+        <button type="submit" onclick="event.preventDefault(); errorMessage();" class="button-error pure-button">Submit</button> 
 
         <a href="index.html" class="button-error pure-button">Go Back</button></a>
         <style>  
@@ -64,5 +65,22 @@
     <h3>We Love Coding!</h3>
     <h4>Copyright &copy; 2022 Dude Wash My Car Creative Services, Inc.</h4>
 </footer>
+<!-- ERROR/SUCCESS PROMPTS WITHOUT APPLYING JAVASCRIPT ALERTS -->
+<script>
+
+    function errorMessage() {
+        var error = document.getElementById("error")
+        if (isNaN(document.getElementById("number").value))
+        {
+             
+           // TO CHANGE MESSAGE PROMPT AND COLOR
+            error.textContent = "Only digits are allowed for zipcode entry field "
+            error.style.color = "red"
+        } else {
+            error.textContent = "Thank you for submiting your request!"
+            error.style.color = "green"
+        }
+      }
+        </script>
 </body>
 </html>
