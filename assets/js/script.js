@@ -180,7 +180,7 @@ initAutocomplete();
 
     //function to call weatherAPI
      function getThreeDayForecast(searchValue) {
-       fetch(`http://api.weatherapi.com/v1/forecast.json?key=49b73569e66f42dc9f950608222312&q=${searchValue}&days=3`)
+       fetch(`https://api.weatherapi.com/v1/forecast.json?key=49b73569e66f42dc9f950608222312&q=${searchValue}&days=3`)
       .then(Response => Response.json())
       .then(data => {
         console.log(data)
