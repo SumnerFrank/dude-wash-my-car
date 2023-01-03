@@ -37,24 +37,16 @@ body {
   width: 200px;
   height: 250px;
   border: 3px solid black;
-  margin: 10px;
   background-color: rgba(90, 13, 13, 0.774);
-}
-
-#forecast img {
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 3rem;
+  margin: 1rem 1rem 1rem 1rem;
+  box-shadow: 0 20px 35px;
 }
 
 #forecast {
-  margin-left: 350px;
   display: flex;
   flex-direction: row;
-}
-
-.search-style {
-  margin-left: 350px;
-  margin-top: 50px;
+  justify-content: center;
 }
 
 .topNavBar {
@@ -103,7 +95,7 @@ a {
 }
 /* MAIN SECTION STYLES ADDED */
 
-#titleBlock {
+.titleBlock {
   margin-top: 5rem;
 }
 
@@ -112,7 +104,7 @@ h2 {
   text-align: center;
 }
 
-p{
+p, h3 {
   text-align: center;
 }
 
@@ -232,6 +224,7 @@ body {
 #target {
   width: 345px;
 }
+
 /* FOOTER */
 #footercontact {
 padding: 0;
@@ -250,7 +243,7 @@ footer {
   text-align: center;
   background:var(--transgray);
   border-top: 2px solid var(--red);
-  margin-top: 20rem;
+  margin-top: 5rem;
   box-shadow: 0 20px 35px;
   bottom: 0;
   width: 100%;
@@ -267,7 +260,6 @@ footer {
     font-size: 15px;
   }
 }
-
 /* MAKES USER SCROLL SMOOTHLY */
 @media
 (prefers-reduced-motion: no-preference) {
@@ -275,3 +267,13 @@ footer {
     scroll-behavior: smooth;
   }
 }
+/* RESPONSIVE LAYOUT FOR WHEN THE SCREEN IS LESS THAN 960PX WIDE, MAKE THE IMAGES START WRAPPING */
+@media screen and (max-width: 600px) {
+  #forecast  {
+    display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  }
+}
+
