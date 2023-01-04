@@ -22,4 +22,4 @@ Locate nearby car washes near the users and read reviews of previous/current cus
 are searching for. 
 
 ### Mock-Up
-(insert photo or video of functioning application)
+<a href="https://sumnerfrank.github.io/dude-wash-my-car/">DEPLOYMENT</a>
