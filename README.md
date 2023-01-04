@@ -22,4 +22,10 @@ Locate nearby car washes near the users and read reviews of previous/current cus
 are searching for. 
 
 ### Mock-Up
-<a href="https://sumnerfrank.github.io/dude-wash-my-car/">DEPLOYMENT</a>
+<a href="https://sumnerfrank.github.io/dude-wash-my-car/" target="_blank">DEPLOYMENT</a>
+
+<img src="assets/images/Screenshot 2023-01-03 at 9.36.45 PM.png">
+<img src="assets/images/Screenshot 2023-01-03 at 9.37.08 PM.png">
+<img src="assets/images/Screenshot 2023-01-03 at 9.37.36 PM.png">
+<img src="assets/images/Screenshot 2023-01-03 at 9.37.59 PM.png">
+<img src="assets/images/Screenshot 2023-01-03 at 9.39.38 PM.png">
